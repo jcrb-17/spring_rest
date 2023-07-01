@@ -36,3 +36,6 @@ Example request
 
 Database
 ![Screenshot](images/1.jpg)
+
+# How to run
+Install STS, run using maven or inside vscode.
