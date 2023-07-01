@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Properties</title>
+    <link rel="stylesheet" th:href="@{/main.css}"/>
+</head>
+<body>
+<div  th:unless="${#lists.isEmpty(currentProperties)}">
+    <h3>Properties</h3>
+    <table>
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Type</th>
+            <th>City</th>
+            <th>Price</th>
+            <th>Available for rent</th>
+            <th>Available for sell</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr th:each="p : ${currentProperties}">
+                <td class="boxId" th:text="${p.id}"></td>
+                <td th:text="${p.type}"></td>
+                <td th:text="${p.city}"></td>
+                <td class="boxPrice" th:text="${p.price}"></td>
+                <td class="boxRent" th:text="${p.rent}"></td>
+                <td class="boxSell" th:text="${p.sell}"></td>
+            </tr>
+        </tbody>
+</div>
+</body>
+</html>

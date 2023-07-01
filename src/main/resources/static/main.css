@@ -1,0 +1,72 @@
+body{
+    font-family:sans-serif;
+    text-align: center;
+    animation: fade .6s ease 1;
+}
+
+::-moz-selection { 
+  color: rgb(255, 255, 255);
+  background: #96c8b3;
+}
+
+.box{
+    border: 1px solid rgba(0,0,0,.2);
+    padding: 5px;
+    float: left;
+    margin-left: 10px;
+    text-align: center;
+    border-radius: 10px;
+    transition: all ease .7s;
+}
+
+.box:hover{
+    box-shadow: 0px 10px 10px rgba(0,0,0,.1);
+}
+
+
+.boxPrice{
+    background-color: cornsilk;
+    font-style: italic;
+}
+
+.boxRent{
+    background-color: aliceblue;
+}
+
+.boxSell{
+    background-color:honeydew;
+}
+
+.boxImg{
+    width: 60px;
+    height: 60px;
+}
+
+.boxId{
+    font-size: .8em;
+}
+
+@keyframes fade {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+table{
+    text-align: center;
+    margin: 0 auto;
+    border-collapse: collapse;
+    animation: fade 1s ease 1;
+    box-shadow: 0px 10px 10px rgba(0,0,0,.1);
+}
+
+td,th{
+    border: 1px solid rgba(0,0,0,.3);
+    padding: 4px;
+    transition: all ease .7s;
+}
+
+th{
+    background-color: #96c8b3;
+}
+
+tr:nth-child(even){background-color: #ececec;}
