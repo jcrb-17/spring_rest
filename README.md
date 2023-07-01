@@ -39,4 +39,5 @@ Database
 
 ## How to run
 Install STS, run using maven or inside vscode
-Install MongoDB
+
+Install MongoDB with default configuration
